@@ -31,10 +31,10 @@ jobs:
         cmd: install # will run `yarn install` command
         
     - name: Build React App
-      run: yarn build
+      run: sudo yarn build
       
     - name: Install Surge
-      run: npm install -g surge
+      run: sudo npm install -g surge
 
     - name: Deploy to Surge
       run: surge ./public ashraf-food.surge.sh --token ${{ secrets.SURGE_TOKEN }}
