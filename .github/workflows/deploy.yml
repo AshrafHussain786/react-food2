@@ -37,4 +37,4 @@ jobs:
       run: sudo npm install -g surge
 
     - name: Deploy to Surge
-      run: sudo surge ./public ashraf-food2.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: sudo surge ./build ashraf-food2.surge.sh --token ${{ secrets.SURGE_TOKEN }}
